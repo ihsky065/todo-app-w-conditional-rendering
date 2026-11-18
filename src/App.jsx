@@ -7,6 +7,11 @@ import ErrorPage from './pages/ErrorPage';
 function Layout () {
     return(
         <>
+            <Navbar bg='light' variant='light'>
+                <Container>
+                    <Navbar.Brand href='/'>Todos</Navbar.Brand>
+                </Container>
+            </Navbar>
         </>
     )
 }
