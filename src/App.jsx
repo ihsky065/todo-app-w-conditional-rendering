@@ -12,6 +12,7 @@ function Layout () {
                     <Navbar.Brand href='/'>Todos</Navbar.Brand>
                 </Container>
             </Navbar>
+            <Outlet/>
         </>
     )
 }
