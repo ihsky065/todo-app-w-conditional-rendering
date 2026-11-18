@@ -3,3 +3,10 @@ import { Container, Navbar } from 'react-bootstrap';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
+
+function Layout () {
+    return(
+        <>
+        </>
+    )
+}
