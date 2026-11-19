@@ -21,6 +21,22 @@ export default function AddTodo () {
                     >        
                     </Form.Control>
                 </Form.Group>
+
+                <Form.Group className='mb-3' controlId="description">
+                    <Form.Label>Description</Form.Label>
+                    <Form.Control
+                    value={description}
+                    onChange={(e) => setDescription(e.target.value)}
+                    placeholder={`Example:
+                    \n1. Clean up project code
+                    \n2. Meeting about project
+                    \n3. Crush interview`}
+                    as="textarea"
+                    rows={3}
+                    required
+                    >        
+                    </Form.Control>
+                </Form.Group>
             </Form>
         </Container>
     )
