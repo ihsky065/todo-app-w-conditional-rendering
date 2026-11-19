@@ -46,6 +46,8 @@ export default function AddTodo () {
                 onChange={(e) => setCompletedMark(e.target.checked)}
                 className="mb-3"
                 />
+
+                <Button variant="primary" type="submit">Submit</Button>
             </Form>
         </Container>
     )
