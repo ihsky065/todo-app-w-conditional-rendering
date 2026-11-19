@@ -27,10 +27,7 @@ export default function AddTodo () {
                     <Form.Control
                     value={description}
                     onChange={(e) => setDescription(e.target.value)}
-                    placeholder={`Example:
-                    \n1. Clean up project code
-                    \n2. Meeting about project
-                    \n3. Crush interview`}
+                    placeholder={`Example:\n1. Clean up project code\n2. Meeting about project\n3. Crush interview`}
                     as="textarea"
                     rows={3}
                     required
