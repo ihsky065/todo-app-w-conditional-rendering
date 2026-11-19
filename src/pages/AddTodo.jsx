@@ -11,6 +11,15 @@ export default function AddTodo () {
             <h1 className="my-3">Add Todo</h1>
             <Form>
                 <Form.Group className='mb-3' controlId="title">
+                    <Form.Label>Title</Form.Label>
+                    <Form.Control
+                    value={title}
+                    onChange={(e) => setTitle(e.target.value)}
+                    placeholder="Example: Get software engine job"
+                    required
+                    type="text"
+                    >        
+                    </Form.Control>
                 </Form.Group>
             </Form>
         </Container>
