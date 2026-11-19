@@ -10,6 +10,9 @@ function Layout () {
             <Navbar bg='light' variant='light'>
                 <Container>
                     <Navbar.Brand href='/'>Todos</Navbar.Brand>
+                    <Nav>
+                        <Nav.Link href='/addTodo'>Add Todo</Nav.Link>
+                    </Nav>
                 </Container>
             </Navbar>
             <Outlet/>
