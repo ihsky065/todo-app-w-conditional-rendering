@@ -3,6 +3,7 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
+import AddTodo from './pages/AddTodo';
 
 function Layout () {
     return(
@@ -26,6 +27,7 @@ export default function App () {
             <Routes>
                 <Route path='/' element={<Layout />} >
                     <Route index element={<Home />} />
+                    <Route path='/addTodo' element={<AddTodo />} />
                     <Route path='*' element={<ErrorPage />} /> 
                 </Route>           
             </Routes>
