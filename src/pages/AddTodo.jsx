@@ -29,7 +29,7 @@ export default function AddTodo () {
                     onChange={(e) => setDescription(e.target.value)}
                     placeholder={`Example:\n1. Clean up project code\n2. Meeting about project\n3. Crush interview`}
                     as="textarea"
-                    rows={3}
+                    rows={4}
                     required
                     >        
                     </Form.Control>
