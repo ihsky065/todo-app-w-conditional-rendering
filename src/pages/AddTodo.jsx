@@ -9,6 +9,7 @@ export default function AddTodo () {
     const [completedMark, setCompletedMark] = useState(false);
     const todos = useContext(TodoContext).todos;
     const setTodos = useContext(TodoContext).setTodos;
+    const navigate = useNavigate();
 
     return(
         <Container>
