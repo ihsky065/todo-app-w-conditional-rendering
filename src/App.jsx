@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import ErrorPage from './pages/ErrorPage';
 import AddTodo from './pages/AddTodo';
 import { useLocalStorage } from 'usehooks-ts';
+import { TodoContext } from './contexts/TodoContext'
 
 function Layout () {
     return(
