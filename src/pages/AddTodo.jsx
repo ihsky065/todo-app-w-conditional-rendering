@@ -8,6 +8,7 @@ export default function AddTodo () {
     const [description, setDescription] = useState('');
     const [completedMark, setCompletedMark] = useState(false);
     const todos = useContext(TodoContext).todos;
+    const setTodos = useContext(TodoContext).setTodos;
 
     return(
         <Container>
