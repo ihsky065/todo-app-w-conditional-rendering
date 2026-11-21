@@ -24,6 +24,7 @@ function Layout () {
 }
 
 export default function App () {
+    const [todos, setTodo] = useLocalStorage('todos', []);
     return(
         <BrowserRouter>
             <Routes>
