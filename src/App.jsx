@@ -26,14 +26,16 @@ function Layout () {
 export default function App () {
     const [todos, setTodo] = useLocalStorage('todos', []);
     return(
-        <BrowserRouter>
-            <Routes>
-                <Route path='/' element={<Layout />} >
-                    <Route index element={<Home />} />
-                    <Route path='/addTodo' element={<AddTodo />} />
-                    <Route path='*' element={<ErrorPage />} /> 
-                </Route>           
-            </Routes>
-        </BrowserRouter>
+        <TodoContext.Provider value={{todos, setTodo}}>
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/' element={<Layout />} >
+                        <Route index element={<Home />} />
+                        <Route path='/addTodo' element={<AddTodo />} />
+                        <Route path='*' element={<ErrorPage />} /> 
+                    </Route>           
+                </Routes>
+            </BrowserRouter>
+        </TodoContext.Provider>
     )
 }
